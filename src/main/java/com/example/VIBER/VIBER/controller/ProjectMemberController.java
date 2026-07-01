@@ -1,4 +1,4 @@
 package com.example.VIBER.VIBER.controller;
 
-public class MemberController {
+public class ProjectMemberController {
 }
