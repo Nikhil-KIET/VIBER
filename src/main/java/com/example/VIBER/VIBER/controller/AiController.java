@@ -19,7 +19,7 @@ public class AiController {
 
 
 
-    @GetMapping("/today")
+    @GetMapping("/today") 
     public ResponseEntity<UsageResponse> getTodayUsage() {
         Long userId = 1L;
         return ResponseEntity.ok(usageService.getTodayUsageOfUser(userId));
