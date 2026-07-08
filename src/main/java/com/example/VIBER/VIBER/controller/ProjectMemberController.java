@@ -1,6 +1,7 @@
 package com.example.VIBER.VIBER.controller;
 
 import com.example.VIBER.VIBER.dto.auth.UserProfileResponse;
+import com.example.VIBER.VIBER.dto.member.MemberResponse;
 import com.example.VIBER.VIBER.service.ProjectMemberService;
 import jakarta.persistence.Id;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,7 @@ public class ProjectMemberController {
     private  final ProjectMemberService projectMemberService;
 
     @GetMapping("/{id}/members")
-    public ResponseEntity<List<UserProfileResponse>>getAllProjectMembers(@PathVariable Long id){
+    public ResponseEntity<List<MemberResponse>>getAllProjectMembers(@PathVariable Long id){
 
         return ResponseEntity.ok(projectMemberService.getAllProjectMembers(id));
 
